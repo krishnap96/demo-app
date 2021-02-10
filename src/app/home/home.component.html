@@ -1,0 +1,47 @@
+
+<div class="sidenav">
+  <input type="hidden" #selection>
+
+    <a href="#" (click)="selection.value = 'about' ">Data Interpolation</a>
+    <a href="#" (click)="selection.value = 'services' ">Services</a>
+    <a href="#" (click)="selection.value = 'clients' ">Clients</a>
+    <a href="#" (click)="selection.value = 'contact' ">Contact</a>
+  </div>
+
+  <div class="main" [ngSwitch]="selection.value">
+    <p *ngSwitchDefault> Data binding - Interpolation </p>
+    <p *ngSwitchCase="'services'">Services</p>
+    <p *ngSwitchCase="'contact'">Contact</p>
+    <p *ngSwitchCase="'clients'">Clients</p>
+  </div>
+  <div class="main">
+   <p>Data binding - Interpolation</p>
+
+   <p>My name is {{ myName }}</p>
+   <p>{{5+9 }}</p>
+   <!-- string contact  -->
+   <p>{{ "welcome"+ myName }}</p> 
+    <p>{{ myName.toUpperCase() }}</p>
+    <p>{{ getNameFunc() }}</p>
+    <!-- Tertarny operator in interpolation  -->
+    <p> my app status is {{ statusBool ? "Online" : "Offline" }} </p>
+    <p> my app status is {{ statusBool ? status1 : status2 }} </p>
+  </div>
+
+<!-- <div style="margin: auto;">
+    <a routerLink="/detail-page">+ Add Product</a>
+</div>
+<div>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Color</th>
+        <th>Name</th>
+    </tr>
+    <tr *ngFor="let item of productsDetail">
+        <td>{{  item.id    }}</td>
+        <td>{{  item.color    }}</td>
+        <td>{{  item.name    }}</td>
+    </tr>
+</table>
+</div> -->

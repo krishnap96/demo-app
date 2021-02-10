@@ -1,0 +1,24 @@
+<p>class-style-bind works!</p>
+
+<!-- We can only do with one class only with (style or class binding)  -->
+
+<!-- Class Binding Like Property Binding (Syntax) -->
+<div class="box" [class.myClass]="myProp"> helo</div>   
+
+<!-- Style Binding Like Property Binding (Syntax)  -->
+<div class="box" [style.margin]="isActive ? MyMargin : '5px'"></div>
+
+
+<!-- We can only do with one class only with (style or class binding)  -->
+
+
+
+<!-- For Multiple Class Styleing we use NgClass or ngStyle -->
+
+<!-- Use of ngClass -->
+<div class="box" [ngClass]="ngMyCass"></div>
+
+<!-- Use of ngStyle    ||   Inline CSS in ngStyle -->
+<div class="box" [ngStyle]="{ 'background-color': 'red','border': '1px solid green' }"></div>
+
+

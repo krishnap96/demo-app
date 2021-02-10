@@ -1,0 +1,14 @@
+<button routerLink="/">Go Back</button>
+
+<h2>Add New Product</h2>
+<form #productData id="formNewProduct" name="formNewProduct" (ngSubmit)="addNewProduct(productData)">
+    <div>
+        <label for="prod_name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Product Name">
+    </div>
+    <div>
+        <label for="color">Color:</label> 
+        <input type="text" name="color" id="color" placeholder="Color">
+    </div>
+    <input type="submit" value="Add Product">
+</form>

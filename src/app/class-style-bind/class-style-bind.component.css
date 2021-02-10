@@ -1,0 +1,14 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+}
+.class1 {
+    background-color: blue;
+}
+.class2 {
+   opacity: 0.5;
+}
+.class3 {
+    border: 4px solid yellow;
+}
